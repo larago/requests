@@ -21,6 +21,8 @@ print r.content
 print r.json()
 print r.raw
 print r.raw.read(10)
+print "start here > ___"
+print r.headers
 
 with open('tmp', 'wb') as fd:
     for chunk in r.iter_content(1024):
